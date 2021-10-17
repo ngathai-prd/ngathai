@@ -1,75 +1,18 @@
 <html lang="en">
   <head>
     <meta charset="utf-8" />
-
-    <title>Widget STG</title>
+    <title>Nga Test Widget</title>
     <meta name="description" content="The HTML5 Herald" />
-    <meta name="author" content="SitePoint" />
+    <meta name="author" content="Nga Thai" />
   </head>
-
   <body>
-    <h1>Environment: STG</h1>
 
-    <table>
-      <tr>
-        <td>Language:</td>
-        <td>
-          <select id="language" onchange="changeLanguage()">
-            <option value="en">English</option>
-            <option value="ar">Arabic</option>
-            <option value="he">Hebrew</option>
-            <option value="ja">Japanese</option>
-            <option value="es">Spanish</option>
-            <option value="vi">Vietnamese</option>
-          </select>
-        </td>
-      </tr>
-      <tr>
-        <td>Company:</td>
-        <td>ParadoxVN - Nga: Nestlé (UAT)</td>
-      </tr>
-      <tr>
-        <td>Widget name:</td>
-        <td>Candidate Care</td>
-      </tr>
-    </table>
 
-    <table class="tftable" border="1">
-    <tr><th>Environment</th><th>Company Name</th><th>Widget Name</th><th>Link</th></tr>
-    <tr><td>STG</td><td>ParadoxVN - Nga: Nestlé (UAT)</td><td>Candidate Care</td><td><a href="/nga_widget_TEST.html">GO</a></td></tr>
-    </table>
-    
-    <script>
-      function loadLanguage() {
-        var language = localStorage.getItem('lang');
-        if (!language) {
-          language = 'en';
-        }
-        document.documentElement.lang = language;
-        document.getElementById('language').value = language;
-      }
-      loadLanguage();
-      function changeLanguage() {
-        var language = document.getElementById('language').value;
-        localStorage.setItem('lang', language);
-        location.reload();
-      }
-    </script>
+<table class="tftable" border="1">
+<tr><th>Environment</th><th>Company Name</th><th>Widget Name</th><th>Link</th></tr>
+<tr><td>STG</td><td>ParadoxVN - Nga: Nestlé (UAT)</td><td>Candidate Care</td><td><a href="/nga_widget_TEST.html" target="_blank">GO</a></td></tr>
+<tr><td>TEST</td><td>Company Name</td><td>Widget Name</td><td><a href="/nga_widget_TEST.html" target="_blank">GO</a></td></tr>
+</table>
 
-    <script type="text/javascript">
-      var _apply = _apply || [];
-      var _applybase = 'https://stg.paradox.ai/';
-      _apply.push(['setKey', 'qyrtlqywysyvzhwinwtd']);
-      _apply.push(['start']);
-      (function () {
-        var apply = document.createElement('script');
-        apply.type = 'text/javascript';
-        apply.async = true;
-        apply.src =
-          'https://d25zu39ynyitwy.cloudfront.net/static/site/js/widget-client.js';
-        var s = document.getElementsByTagName('script')[0];
-        s.parentNode.insertBefore(apply, s);
-      })();
-    </script>
   </body>
 </html>
