@@ -1,23 +1,61 @@
-<html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <title>Nga Test Widget</title>
-    <meta name="description" content="The HTML5 Herald" />
-    <meta name="author" content="Nga Thai" />
+    <html lang="en">
+    <head>
+      <meta charset="utf-8" />
+      <title>Nga Test Widget</title>
+      <meta name="description" content="The HTML5 Herald" />
+      <meta name="author" content="Nga Thai" />
+      <style type="text/css">
+      .row{
+        display: grid;
+        grid-template-columns: 600px 600px;
+        padding-left: 80px;
+      }
+
+      h1{
+        text-align: center;
+      }
+
+      table{
+        border-collapse: collapse;
+        width: 500px;
+      }
+    </style>
   </head>
   <body>
 
+    <h1>TEST WIDGET AND EMBEDDED</h1>
 
-<table class="tftable" border="1">
-<tr><th>Environment</th><th>Company Name</th><th>Widget Name</th><th>Link</th></tr>
-<tr><td>STG</td><td>ParadoxVN - Nga: Nestlé (UAT)</td><td>Candidate Care</td><td><a href="/nga_widget_stg_nestle.html" target="_blank">Click Here</a></td></tr>
-<tr><td>STG</td><td>ParadoxVN - Nga: Experience ON</td><td>Full Overlay</td><td><a href="/nga_widget_stg_experience_on.html" target="_blank">Click Here</a></td></tr>
-</table>
+    <div class="row">
+      <div class="column">
+        <h2>WIDGET</h2>
+        <table class="tftable" border="1">
+          <tr><th>Env</th><th>Company Name</th><th>Widget Name</th><th>Link</th></tr>
+          <tr><td>STG</td><td>Nga: Nestlé (UAT)</td><td>Candidate Care</td><td><a href="/nga_widget_stg_nestle.html" target="_blank">Click Here</a></td></tr>
+          <tr><td></td><td>Nga: Experience ON</td><td>Full Overlay</td><td><a href="/nga_widget_stg_experience_on.html" target="_blank">Click Here</a></td></tr>
+          <tr><td>TEST</td><td>...</td><td>...</td><td><a href="/....html" target="_blank">Click Here</a></td></tr>
+          <tr><td></td><td>...</td><td>...</td><td><a href="/....html" target="_blank">Click Here</a></td></tr>
+          <tr><td>DEV</td><td>...</td><td>...</td><td><a href="/....html" target="_blank">Click Here</a></td></tr>
+          <tr><td></td><td>...</td><td>...</td><td><a href="/....html" target="_blank">Click Here</a></td></tr>
+          <tr><td>Olivia PROD</td><td>...</td><td>...</td><td><a href="/....html" target="_blank">Click Here</a></td></tr>
+          <tr><td></td><td>...</td><td>...</td><td><a href="/....html" target="_blank">Click Here</a></td></tr>
+        </table>
+      </div>
 
-<table class="tftable" border="1">
-<tr><th>Environment</th><th>Company Name</th><th>Embedded Name</th><th>Link</th></tr>
-<tr><td>STG</td><td>ParadoxVN - Nga: Nestlé (UAT)</td><td>Embedded - Don't Delete</td><td><a href="/nga_embedded_stg_nestle.html" target="_blank">Click Here</a></td></tr>
-</table>
+      <div class="column">
+        <h2>EMBEDDED</h2>
+        <table class="tftable" border="1">
+          <tr><th>Env</th><th>Company Name</th><th>Embedded Name</th><th>Link</th></tr>
+          <tr><td>STG</td></td><td>Nga: Nestlé (UAT)</td><td>Candidate Care Embedded</td><td><a href="/nga_embedded_stg_nestle.html" target="_blank">Click Here</a></td></tr>
+          <tr><td></td><td>Nga: Experience ON</td><td>Default Embedded</td><td><a href="/nga_embedded_stg_experience.html" target="_blank">Click Here</a></td></tr>
+          <tr><td>TEST</td></td><td>...</td><td>...</td><td><a href="/....html" target="_blank">Click Here</a></td></tr>
+          <tr><td></td><td>...</td><td>...</td><td><a href="/....html" target="_blank">Click Here</a></td></tr>
+          <tr><td>DEV</td></td><td>...</td><td>...</td><td><a href="/....html" target="_blank">Click Here</a></td></tr>
+          <tr><td></td><td>...</td><td>...</td><td><a href="/....html" target="_blank">Click Here</a></td></tr>
+          <tr><td>Olivia PROD</td></td><td>...</td><td>...</td><td><a href="/....html" target="_blank">Click Here</a></td></tr>
+          <tr><td></td><td>...</td><td>...</td><td><a href="/....html" target="_blank">Click Here</a></td></tr>
+        </table>
+      </div>
+    </div>
 
   </body>
-</html>
+  </html>
