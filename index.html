@@ -8,36 +8,64 @@
       .row{
         display: grid;
         grid-template-columns: 600px 600px;
-        padding-left: 80px;
+        padding-left: 100px;
       }
 
       h1{
+        text-align: center;
+        margin-top: 50px;
+        color: #57A1A1;
+      }
+      h2{
         text-align: center;
       }
 
       table{
         border-collapse: collapse;
-        width: 500px;
+        width: 550px;
       }
+
+      td{
+        padding-left: 10px;
+      }
+
+      tr{
+        height: 40px;
+      }
+      
+      .tftable tr:nth-child(even){
+        background-color: #3BDADA;
+      }
+
+      .tftable tr:nth-child(odd){
+        background-color: #E3EAEA;
+      }
+
+      .tftable th{
+        background-color: #57A1A1;
+      }
+
     </style>
   </head>
   <body>
 
     <h1>TEST WIDGET AND EMBEDDED</h1>
 
+    <div id="content">
     <div class="row">
       <div class="column">
         <h2>WIDGET</h2>
         <table class="tftable" border="1">
           <tr><th>Env</th><th>Company Name</th><th>Widget Name</th><th>Link</th></tr>
-          <tr><td>STG</td><td>Nga: Nestlé (UAT)</td><td>Candidate Care</td><td><a href="/nga_widget_stg_nestle.html" target="_blank">Click Here</a></td></tr>
-          <tr><td></td><td>Nga: Experience ON</td><td>Full Overlay</td><td><a href="/nga_widget_stg_experience_on.html" target="_blank">Click Here</a></td></tr>
-          <tr><td>TEST</td><td>...</td><td>...</td><td><a href="/....html" target="_blank">Click Here</a></td></tr>
-          <tr><td></td><td>...</td><td>...</td><td><a href="/....html" target="_blank">Click Here</a></td></tr>
-          <tr><td>DEV</td><td>...</td><td>...</td><td><a href="/....html" target="_blank">Click Here</a></td></tr>
-          <tr><td></td><td>...</td><td>...</td><td><a href="/....html" target="_blank">Click Here</a></td></tr>
-          <tr><td>Olivia PROD</td><td>...</td><td>...</td><td><a href="/....html" target="_blank">Click Here</a></td></tr>
-          <tr><td></td><td>...</td><td>...</td><td><a href="/....html" target="_blank">Click Here</a></td></tr>
+          <tr><td>STG</td><td>Nga: Nestlé (UAT)</td><td>Candidate Care</td><td><a href="/nga_widget_stg_nestle.html" target="_blank">HERE</a></td></tr>
+          <tr><td></td><td>Nga: Experience ON</td><td>Full Overlay</td><td><a href="/nga_widget_stg_experience_on.html" target="_blank">HERE</a></td></tr>
+          <tr><td></td><td>Thanh : Thanh Company</td><td>Thanh Widget</td><td><a href="/thanh_widget_stg.html" target="_blank">HERE</a></td></tr>
+          <tr><td>TEST</td><td>Nga Company - Jobs</td><td>Nga - Default Widget</td><td><a href="/nga_widget_test_ngajob.html" target="_blank">HERE</a></td></tr>
+          <tr><td></td><td>Nga Applicant Flow</td><td>Nga - Default Widget</td><td><a href="/nga_widget_test_ngaaf.html" target="_blank">HERE</a></td></tr>
+          <tr><td>Olivia PROD</td><td>Nga: Hire ON</td><td>Nga - Default Widget</td><td><a href="/nga_widget_prod_hire_on.html" target="_blank">HERE</a></td></tr>
+          <tr><td></td><td>Nga: Experience ON</td><td>Nga - Default Widget</td><td><a href="/nga_widget_prod_experience.html" target="_blank">HERE</a></td></tr>
+          <tr><td>DEV</td><td>...</td><td>...</td><td><a href="/....html" target="_blank">HERE</a></td></tr>
+          <tr><td></td><td>...</td><td>...</td><td><a href="/....html" target="_blank">HERE</a></td></tr>
         </table>
       </div>
 
@@ -45,16 +73,18 @@
         <h2>EMBEDDED</h2>
         <table class="tftable" border="1">
           <tr><th>Env</th><th>Company Name</th><th>Embedded Name</th><th>Link</th></tr>
-          <tr><td>STG</td></td><td>Nga: Nestlé (UAT)</td><td>Candidate Care Embedded</td><td><a href="/nga_embedded_stg_nestle.html" target="_blank">Click Here</a></td></tr>
-          <tr><td></td><td>Nga: Experience ON</td><td>Default Embedded</td><td><a href="/nga_embedded_stg_experience.html" target="_blank">Click Here</a></td></tr>
-          <tr><td>TEST</td></td><td>...</td><td>...</td><td><a href="/....html" target="_blank">Click Here</a></td></tr>
-          <tr><td></td><td>...</td><td>...</td><td><a href="/....html" target="_blank">Click Here</a></td></tr>
-          <tr><td>DEV</td></td><td>...</td><td>...</td><td><a href="/....html" target="_blank">Click Here</a></td></tr>
-          <tr><td></td><td>...</td><td>...</td><td><a href="/....html" target="_blank">Click Here</a></td></tr>
-          <tr><td>Olivia PROD</td></td><td>...</td><td>...</td><td><a href="/....html" target="_blank">Click Here</a></td></tr>
-          <tr><td></td><td>...</td><td>...</td><td><a href="/....html" target="_blank">Click Here</a></td></tr>
+          <tr><td>STG</td></td><td>Nga: Nestlé (UAT)</td><td>Candidate Care Embedded</td><td><a href="/nga_embedded_stg_nestle.html" target="_blank">HERE</a></td></tr>
+          <tr><td></td><td>Nga: Experience ON</td><td>Default Embedded</td><td><a href="/nga_embedded_stg_experience.html" target="_blank">HERE</a></td></tr>
+          <tr><td></td><td>Thanh : Thanh Company</td><td>Thanh Embedded</td><td><a href="/thanh_embedded_stg.html" target="_blank">HERE</a></td></tr>
+          <tr><td>TEST</td></td><td>Nga Company - Jobs</td><td>Nga - Default Embedded</td><td><a href="/nga_embedded_test_ngajob.html" target="_blank">HERE</a></td></tr>
+          <tr><td></td><td>Nga Applicant Flow</td><td>Nga - Default Embedded</td><td><a href="/nga_embedded_test_ngaaf.html" target="_blank">HERE</a></td></tr>
+          <tr><td>Olivia PROD</td></td><td>Nga: Hire ON</td><td>Nga - Default Embedded</td><td><a href="/nga_embedded_prod_hire_on.html" target="_blank">HERE</a></td></tr>
+          <tr><td></td><td>Nga: Experience ON</td><td>Nga - Default Embedded</td><td><a href="/nga_embedded_prod_experience.html" target="_blank">HERE</a></td></tr>
+          <tr><td>DEV</td></td><td>...</td><td>...</td><td><a href="/....html" target="_blank">HERE</a></td></tr>
+          <tr><td></td><td>...</td><td>...</td><td><a href="/....html" target="_blank">HERE</a></td></tr>
         </table>
       </div>
+    </div>
     </div>
 
   </body>
